@@ -58,6 +58,13 @@ class BuildTests(unittest.TestCase):
         for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", guide):
             self.assertTrue(target.startswith(("https://", "http://", "#")), target)
 
+    def test_plugin_versions_agree(self):
+        claude = json.loads((ROOT / ".claude-plugin/plugin.json").read_text())
+        market = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
+        codex = json.loads((ROOT / ".codex-plugin/plugin.json").read_text())
+        versions = {claude["version"], market["metadata"]["version"], market["plugins"][0]["version"], codex["version"]}
+        self.assertEqual(len(versions), 1, versions)
+
     def test_skill_reference_links_resolve(self):
         for name in build.SKILL_FILES:
             if not name.endswith(".md"):

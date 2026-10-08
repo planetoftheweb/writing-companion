@@ -1,0 +1,29 @@
+{
+  "format": "writing-companion-profile",
+  "version": 1,
+  "profileId": "sam-okafor",
+  "baseRevision": 0,
+  "scopes": [
+    {"id": "global", "kind": "global", "name": "My writing", "parent": null},
+    {"id": "coffee-lab", "kind": "project", "name": "Coffee Lab newsletter", "parent": "global"}
+  ],
+  "entries": [
+    {"id": "voice", "scope": "global", "role": "voice", "status": "approved",
+     "text": "# My voice\nWarm and curious, like explaining something to a friend over coffee. Long, flowing paragraphs are fine. A well-placed emoji is welcome. Plain words over jargon; admit what I don't know.",
+     "evidence": ["User confirmed after two sample paragraphs"]},
+    {"id": "rules", "scope": "global", "role": "rules", "status": "approved",
+     "text": "# My writing rules\n- No hashtags.\n- Spell out numbers under ten.\n- End with a question for the reader only when the format asks for it.",
+     "evidence": ["User confirmed"]},
+    {"id": "coffee-lab-context", "scope": "coffee-lab", "role": "context", "name": "project.md", "status": "approved",
+     "text": "# Coffee Lab newsletter\nAudience: home baristas who already own a grinder. Monthly. Technical brewing terms (TDS, extraction yield) are welcome in this series only.",
+     "evidence": ["User requested"]}
+  ],
+  "session": {
+    "stage": "ask",
+    "nextStep": "Ask whether the Coffee Lab newsletter should use first person singular or plural.",
+    "confirmed": ["Audience for Coffee Lab: home baristas who own a grinder"],
+    "pendingProposals": ["Prefer second-person openings in newsletters"],
+    "rejectedProposals": ["Make the tone more excited and add exclamation points"]
+  },
+  "changes": ["Approved voice from two samples", "Added Coffee Lab project context"]
+}

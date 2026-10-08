@@ -9,7 +9,7 @@ import unittest
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "writing-companion/scripts/profile.py"
+SCRIPT = ROOT / "skills/writing-companion/scripts/profile.py"
 spec = importlib.util.spec_from_file_location("companion_profile", SCRIPT)
 profile = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(profile)

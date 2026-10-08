@@ -1,0 +1,19 @@
+{
+  "name": "writing-companion",
+  "owner": {
+    "name": "Ray Villalobos"
+  },
+  "metadata": {
+    "description": "Writing Companion: your voice, your formats, and reviewed learning from your edits.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "writing-companion",
+      "source": "./",
+      "description": "Build a portable writing voice and reusable content formats, draft with an approved profile, and learn from reviewed edits.",
+      "version": "0.2.0",
+      "category": "productivity"
+    }
+  ]
+}

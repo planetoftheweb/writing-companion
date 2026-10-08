@@ -12,13 +12,13 @@ The installed skill contains the method, never the creator's private profile. Ke
 ## Choose the useful next step
 
 - **Set up my voice / resume setup:** Read [setup.md](references/setup.md). Gather → reflect → ask → try → keep, without restarting completed steps.
-- **Write something:** Read [writing.md](references/writing.md). Use approved guidance and the actual brief. Do not make setup a prerequisite to writing.
+- **Write something:** Read [writing.md](references/writing.md). Use approved guidance and the actual brief. Do not make setup a prerequisite to writing. When asked for a draft, include one in that reply, with marked placeholders for missing details.
 - **Create a format:** Read [writing.md](references/writing.md) and [template-library.md](references/template-library.md). Adapt only the selected starter template and its instructions; test them on a real piece.
 - **Give me prompts:** Read [prompt-series.md](references/prompt-series.md) and the linked prompt library. Offer the relevant prompt or the sequence, without requiring installation.
 - **Learn from my edits:** Read [learning.md](references/learning.md). Propose a brief checkpoint, then apply only approved changes.
 - **Export / save / resume from files:** Read [portability.md](references/portability.md). Use the included exporter when file tools are available. Read [platforms.md](references/platforms.md) for saving in the current platform.
 
-If no action is clear, ask what they want to publish next. Ask no more than three questions per turn. Use short choices when helpful, with room for the person's own answer. Mark requests for samples and extra context as optional.
+If no action is clear, ask what they want to publish next. Ask no more than three questions per turn, counting every question mark; never pack several questions into one numbered item. Use short choices when helpful, with room for the person's own answer. Mark requests for samples and extra context as optional.
 
 ## Know what is actually available
 

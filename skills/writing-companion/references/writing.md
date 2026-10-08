@@ -4,7 +4,7 @@
 
 Load the approved voice and rules plus the relevant workspace, project, and content format. Read their actual text, not just filenames or a remembered summary. Use the scope relationships in the profile index to choose the correct branch. Exclude archived revisions, draft preferences, unrelated projects, and the fictional example.
 
-Get only missing essentials: the subject, audience, output format, and desired outcome. If the user has already provided these, begin. Where a factual claim needs a source, use an available source or mark it for verification. Do not manufacture citations or publish anything automatically.
+Get only missing essentials: the subject, audience, output format, and desired outcome. If the user has already provided these, begin. When a detail is missing but the piece is short, draft now with clearly marked placeholders or stated assumptions, then ask what to fill in. Where a factual claim needs a source, use an available source or mark it for verification. Do not manufacture citations or publish anything automatically.
 
 Interpret specificity carefully: the current request controls this piece; project requirements specialize global defaults; a format governs the shape of its output. When two applicable requirements directly conflict and neither clearly wins, ask. Do not drop the person's voice because a template is available.
 

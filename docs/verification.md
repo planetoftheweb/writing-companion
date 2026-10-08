@@ -1,22 +1,22 @@
 # Verification
 
-This records the September 2026 release. The profile and build checks now live in `tests/` and run on every push. The live platform testing below is still open.
+## Behavior evals
 
-Verified locally on September 18, 2026:
+October 8, 2026, Project edition through OpenRouter, graded by Claude Opus 5.5 (`evals/run.py`, 16 scenarios, 42 criteria):
 
-- 17 automated profile checks cover export/restart, Unicode, partial setup without samples or memory, approved versus draft guidance, rejected proposals, scope separation, format pairs, revision history, entry-level restoration, stale revisions, mixed profiles, accidental overwrite, manual edits, archive paths.
-- Seven distribution checks cover the ten complete prompts, six template pairs, draft-only starter exports, embedded Project assets, reference links, archive allowlists, checksums, and protection against overwriting an existing distribution. All 24 focused tests passed.
-- The two-page quickstart was generated from one Markdown source as editable Word and PDF. Both rendered pages were visually inspected after the final formatting change.
-- The skill passed the skill-creator frontmatter validator.
-- The optional plugin passed the plugin-creator manifest validator.
-- Packaging uses an explicit source allowlist. No personal profile, raw writing sample, credentials, app connection, or MCP server is included.
+| Model | First run | After fixes |
+|---|---|---|
+| Claude Opus 5.5 | 40/42 | 42/42 |
+| GPT-6.1 Sol | 39/42 | 42/42 |
 
-Live acceptance testing remains incomplete:
+The first run found two problems. Both models packed several questions into each of their three numbered items, and GPT asked for details instead of drafting from a thin brief. `SKILL.md` and the Project instructions now count every question mark, and they ask for a draft with marked placeholders whenever one is requested.
 
-- ChatGPT opened a workspace agreement. It was not acknowledged on the user's behalf, and no skill was uploaded or installed there.
-- Claude opened an incognito chat, but the browser extension rejected file upload because file access was unavailable. No guide was uploaded, no prompt was submitted, and no skill was installed. Browser file-upload access must be enabled by the user before running that path.
-- The full conversational scenario matrix has not been passed on either platform. Local format checks do not establish model behavior or native installation success.
+Not yet covered: the installed skill through the Anthropic Skills API (`--backend skill`, needs `ANTHROPIC_API_KEY`), ChatGPT's own skill upload, and restoring from a profile ZIP rather than pasted `writing-profile.md`. Each scenario was run once, so treat a single pass as encouraging, not conclusive.
 
-The skill ZIP, Project edition, and optional plugin are prepared for installation. They have not been published to a marketplace or enabled in the user's account.
+## Local checks
 
-Use the included `Acceptance scenarios.md` for the remaining platform checks. A structurally valid skill does not establish that Claude or ChatGPT installed or followed it correctly.
+`python3 -m unittest discover -s tests` runs 17 profile-exporter checks and 7 build checks. The profile checks cover export and restart, Unicode, partial setup, approved versus draft guidance, rejected proposals, scope separation, format pairs, revision history, restoring single entries, and archive safety. The build checks cover archive allowlists, the ten prompts, the Project guide's embedded assets and links, the six starter formats, and matching plugin versions.
+
+## Platform installs
+
+Uploading the skill in claude.ai and in ChatGPT has not been tested by hand. Platform labels and availability can change; see the links in the README.

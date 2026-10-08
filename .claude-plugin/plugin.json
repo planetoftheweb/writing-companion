@@ -1,0 +1,12 @@
+{
+  "name": "writing-companion",
+  "description": "Build a portable writing voice and reusable content formats, draft with an approved profile, and learn from reviewed edits.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Ray Villalobos"
+  },
+  "homepage": "https://github.com/planetoftheweb/writing-companion",
+  "license": "MIT",
+  "keywords": ["writing", "voice", "content", "templates"],
+  "skills": ["./skills/writing-companion"]
+}

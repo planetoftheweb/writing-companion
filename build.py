@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the release downloads from writing-companion/ into dist/ and refresh docs/prompts.md."""
+"""Build the release downloads from skills/writing-companion/ into dist/ and refresh docs/prompts.md."""
 import json
 from pathlib import Path
 import re
@@ -7,8 +7,7 @@ import shutil
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-SKILL = ROOT / "writing-companion"
-PACKAGING = ROOT / "packaging"
+SKILL = ROOT / "skills/writing-companion"
 DIST = ROOT / "dist"
 # Order sets the reading order of the Project edition guide.
 REFERENCES = ["setup.md", "writing.md", "learning.md", "series-example.md", "portability.md", "platforms.md",
@@ -84,12 +83,12 @@ def build():
     DIST.mkdir()
     zip_files(DIST / "writing-companion-skill.zip", {"writing-companion/" + n: raw for n, raw in payload.items()})
     plugin = {"writing-companion/skills/writing-companion/" + n: raw for n, raw in payload.items()}
-    plugin["writing-companion/.codex-plugin/plugin.json"] = (PACKAGING / "plugin.json").read_bytes()
+    plugin["writing-companion/.codex-plugin/plugin.json"] = (ROOT / ".codex-plugin/plugin.json").read_bytes()
     zip_files(DIST / "writing-companion-plugin.zip", plugin)
     kit = {
         "Quickstart.md": (ROOT / "docs/quickstart.md").read_bytes(),
         "Project edition/writing-companion-guide.md": project_guide(payload, prompts),
-        "Project edition/project-instructions.txt": (PACKAGING / "project-instructions.txt").read_bytes(),
+        "Project edition/project-instructions.txt": (ROOT / "docs/project-instructions.txt").read_bytes(),
         "Project edition/profile.py": payload["scripts/profile.py"],
         "Prompts/Prompt series.md": prompt_guide(prompts),
     }
