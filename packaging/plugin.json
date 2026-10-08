@@ -1,0 +1,22 @@
+{
+  "name": "writing-companion",
+  "version": "0.1.0",
+  "description": "A portable writing companion for voice, formats, drafting, and reviewed learning.",
+  "author": {
+    "name": "Writing Companion"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Writing Companion",
+    "shortDescription": "Build your voice. Write. Learn from your edits.",
+    "longDescription": "A standalone writing workflow with private portable profiles, reusable formats, and reviewed learning. No MCP or writing-app account required.",
+    "developerName": "Writing Companion",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Help me set up my writing voice.",
+      "Write something using my profile.",
+      "Learn from my edits and export my profile."
+    ]
+  }
+}

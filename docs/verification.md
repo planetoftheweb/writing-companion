@@ -1,5 +1,7 @@
 # Verification
 
+This records the September 2026 release. The profile and build checks now live in `tests/` and run on every push. The live platform testing below is still open.
+
 Verified locally on September 18, 2026:
 
 - 17 automated profile checks cover export/restart, Unicode, partial setup without samples or memory, approved versus draft guidance, rejected proposals, scope separation, format pairs, revision history, entry-level restoration, stale revisions, mixed profiles, accidental overwrite, manual edits, archive paths.

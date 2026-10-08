@@ -39,7 +39,7 @@ For validated ZIP exports, also upload **profile.py** where code execution is av
 
 ## Install the skill if available
 
-You can optionally upload **Install/writing-companion-skill.zip** through your platform's skill-upload controls and enable it. Availability depends on your account and workspace settings. If you don't see those controls, continue with the prompts or Project edition.
+You can optionally upload **writing-companion-skill.zip** (from the [latest release](https://github.com/planetoftheweb/writing-companion/releases/latest)) through your platform's skill-upload controls and enable it. Availability depends on your account and workspace settings. If you don't see those controls, continue with the prompts or Project edition.
 
 Installation adds the workflow, not your personal profile. Keep supplying or saving your approved guidance. The companion should always tell you whether changes are in the chat, an exported file, or an actual Project source.
 
