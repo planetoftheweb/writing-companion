@@ -29,6 +29,8 @@ Download from the [latest release](https://github.com/planetoftheweb/writing-com
 
 **Just prompts:** Paste the [prompt series](docs/prompts.md) into any chat, one at a time. Start with "Start with my writing."
 
+**Making video?** The [video playbooks](docs/playbooks/) cover writing and editing with AI, and link to the starter templates in this skill.
+
 ## Keep your progress
 
 The companion exports a profile ZIP and a readable `writing-profile.md`. Add the Markdown file to your Project's sources, replacing the old copy, and keep the ZIP privately for history. In a new chat, ask the companion to resume from your profile.
@@ -75,7 +77,7 @@ The default `project` backend runs the Project edition on any [OpenRouter](https
 |---|---|
 | `skills/writing-companion/` | The skill: `SKILL.md`, references, starter templates, prompts, and the `profile.py` exporter |
 | `.claude-plugin/`, `.codex-plugin/` | Plugin manifests for Claude Code and OpenAI |
-| `docs/` | Quickstart, prompt series, Project edition instructions, and verification notes |
+| `docs/` | Quickstart, prompt series, Project edition instructions, verification notes, and the [video playbooks](docs/playbooks/) |
 | `tests/` | Profile exporter and build checks (standard library only) |
 | `evals/` | Behavior scenarios, the fictional test profile, and the eval runner |
 

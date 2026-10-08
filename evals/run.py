@@ -89,7 +89,11 @@ class ClaudeSkill:
                 if response.container:
                     container_id = response.container.id
                 messages.append({"role": "assistant", "content": response.content})
-                reply += [b.text for b in response.content if b.type == "text"]
+                for block in response.content:
+                    if block.type == "text":
+                        reply.append(block.text)
+                    elif block.type == "server_tool_use":  # shows which skill files Claude opened
+                        reply.append(f"[ran: {' '.join(str(block.input[k]) for k in ('command', 'path') if k in block.input)}]")
                 if response.stop_reason == "refusal":
                     reply.append("[refused]")
                     break
@@ -100,9 +104,7 @@ class ClaudeSkill:
         return replies
 
     def close(self):
-        for version in self.client.skills.versions.list(skill_id=self.skill.id):
-            self.client.skills.versions.delete(version.version, skill_id=self.skill.id)
-        self.client.skills.delete(self.skill.id)
+        self.client.skills.delete(self.skill.id)  # removes its versions too
 
 
 def openrouter(model, messages, **extra):
