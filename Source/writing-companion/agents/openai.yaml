@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Companion"
+  short_description: "Build your voice, write, and learn from your edits"
+  default_prompt: "Use $writing-companion to help me set up my writing voice and work on a real piece."
