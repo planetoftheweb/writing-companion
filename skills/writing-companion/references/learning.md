@@ -32,3 +32,17 @@ Read the relevant earlier snapshot. Explain the entry-level change to restore an
 ## State what was saved
 
 Distinguish “updated in this chat,” “exported as a file,” and “saved in the project's sources.” Only claim the last one after a supported action succeeds. Otherwise give the person the updated download and the platform-specific save step. Keep learning user-reviewed and session-bound, with no claim of background retraining.
+
+## Recommend the smallest useful guidance change
+
+During ordinary writing, notice recurring corrections or an explicit standing preference, not only formal setup requests. At a useful checkpoint, recommend an existing guidance update or a missing document when it would prevent repeated work. Do not interrupt every edit or require a complete profile before drafting.
+
+- Repeated tone, rhythm or perspective corrections belong in Soul (`soul.md`). Do not infer identity from one piece.
+- Standing requirements such as terminology, punctuation and attribution belong in writing rules (`rules.md`).
+- Shared client or brand requirements belong in workspace guidance.
+- Audience, purpose and recurring content boundaries specific to a series belong in project guidance.
+- Visual-to-narration order and other delivery patterns belong in format instructions and their template, not in Soul.
+
+Read what already exists first, including effective guidance from a connected writing app. Prefer revising the relevant document over creating a duplicate. Explain the observed pattern, proposed rule, intended scope, and a short before/after example using supplied material. Offer at most three proposals. A one-time correction is not a standing preference; explicit approval to save a particular rule at a particular scope is sufficient without asking again.
+
+Create or revise only approved guidance. Preserve unrelated content and prior revisions when available. If evidence is thin, offer a provisional example instead of claiming a learned preference. With Writaible, follow connected-writing.md for scoped previews and revision checks; personal account changes require the app's import path. Without file tools, return a clearly labeled proposal rather than claiming it was saved.

@@ -11,7 +11,7 @@ SKILL = ROOT / "skills/writing-companion"
 DIST = ROOT / "dist"
 # Order sets the reading order of the Project edition guide.
 REFERENCES = ["setup.md", "writing.md", "learning.md", "series-example.md", "portability.md", "platforms.md",
-              "template-library.md", "prompt-series.md"]
+              "template-library.md", "prompt-series.md", "visual-narration.md", "connected-writing.md"]
 FORMATS = ["script", "article", "blog-post", "newsletter", "linkedin-post", "x-post"]
 GUIDANCE = ["writing-foundation", "voice-options", "workspace", "series"]
 ASSETS = [f"assets/content-types/{kind}/{name}.md" for kind in FORMATS for name in ("template", "ai-instructions")]

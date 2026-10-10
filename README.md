@@ -84,3 +84,9 @@ The default `project` backend runs the Project edition on any [OpenRouter](https
 Platform setup was last checked September 18, 2026: [Claude skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [ChatGPT skills](https://help.openai.com/en/articles/20001066) · [ChatGPT Projects](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) · [OpenAI plugins](https://help.openai.com/en/articles/20001256)
 
 MIT licensed.
+
+## Shared guidance and optional connections
+
+Version 0.3.0 pairs script visuals with the narration immediately after them, following the same order. During writing, recurring corrections can prompt a recommendation to improve Soul, writing rules, project guidance or a format. Only approved changes become lasting guidance.
+
+An optional Writaible MCP workflow reads the selected document's effective guidance and uses previewed, revision-checked updates for approved project or workspace rules. Personal profiles stay private and separate from the skill. No connection or background sync is required for standalone use. Claude, ChatGPT and Grok Bot need the guide and any required tools loaded in their own session; publishing a package does not install it for them.

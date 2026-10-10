@@ -8,7 +8,7 @@ Suggested structure. Adapt to the audience and purpose; remove unused sections a
 
 ## Explain and demonstrate
 
-[Explain one idea at a time. Walk through a concrete example and what to notice. Keep production directions separate from spoken words.]
+[Explain one idea at a time. For each visual: brief setup if needed, visual, immediate matching narration in reveal order, then implication or transition. Explain each point with meaning or a supported example. Keep production directions separate from spoken words.]
 
 ## Try it (optional)
 

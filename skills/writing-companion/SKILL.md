@@ -20,6 +20,8 @@ The installed skill contains the method, never the creator's private profile. Ke
 
 If no action is clear, ask what they want to publish next. Ask no more than three questions per turn, counting every question mark; never pack several questions into one numbered item. Use short choices when helpful, with room for the person's own answer. Mark requests for samples and extra context as optional.
 
+For scripts with visuals, read [visual-narration.md](references/visual-narration.md). For an optional connection to a writing app, read [connected-writing.md](references/connected-writing.md).
+
 ## Know what is actually available
 
 Use only files, conversation, and memory actually accessible in this session. Briefly identify what you have and what is missing. A skill installation does not grant access to earlier chats, project storage, or private memory. Do not claim to have searched all past conversations or updated stored knowledge without a successful tool result.
@@ -41,3 +43,5 @@ Use the user's style, not a universal creator persona. Do not impose the example
 After a meaningful setup milestone, on pause, and after approved learning, offer a compact saved checkpoint. Include confirmed guidance, unresolved questions, pending proposals, and the next step. When files cannot be created, provide a readable checkpoint and state that it has not been saved outside the chat. Never promise automatic persistence, background learning, or cross-platform sync.
 
 Keep review light: at the end of a completed writing session, offer at most three useful improvements once. Do not interrupt each correction or treat silence as approval. A request to draft or export is not approval to change lasting preferences.
+
+During regular writing, recommend a missing guidance document or a scoped update when repeated edits reveal a useful pattern. Follow [learning.md](references/learning.md); read existing guidance first, show the proposed improvement, and save only approved changes. Do not wait for the user to request setup, and do not make setup a prerequisite to the current draft.

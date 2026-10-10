@@ -28,3 +28,5 @@ The example in [series-example.md](series-example.md) illustrates a LinkedIn vid
 ## After editing
 
 Compare the user's final wording with the previous draft when both are available. A factual correction or one shortened sentence is not necessarily a lasting style preference. Use [learning.md](learning.md) for the optional end-of-session checkpoint.
+
+When repeated corrections suggest missing or incomplete guidance, use the recommendation workflow in [learning.md](learning.md) at a natural checkpoint. Consider Soul, writing rules, project context and format instructions separately. Improve the existing approved source when possible; do not build a second profile alongside connected guidance.
